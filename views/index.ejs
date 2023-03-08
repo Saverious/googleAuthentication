@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %> with html</p>
+    <div id="g_id_onload"
+         data-client_id="<%=google_client_id%>"
+         data-login_uri="<%=red_url%>">
+    </div>
+    <div class="g_id_signin"
+        data-type="standard"
+        data-size="large"
+        data-theme="outline"
+        data-text="sign_in_with"
+        data-shape="rectangular"
+        data-logo_alignment="left">
+    </div>
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+  </body>
+</html>
